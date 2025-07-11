@@ -32,3 +32,6 @@ AI 기술을 활용한 실시간 응급실 현황 공유 및 최적 병원 자�
     - `Google Gemini API (gemini-2.0-flash)`:
         - 자연어 이해(NLU): 환자 증상 텍스트 분석 및 최적 진료과 추천
         - 대화형 AI: 시스템 프롬프트 기반 역할 부여 및 JSON 형식의 구조화된 데이터 추출
+
+폰트 출처
+https://www.seoul.go.kr/seoul/font.do
