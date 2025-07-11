@@ -52,3 +52,6 @@ AI 기술을 활용한 실시간 응급실 현황 공유 및 최적 병원 자�
 
 폰트 출처
 https://www.seoul.go.kr/seoul/font.do
+
+
+<iframe src="https://sudden-orca-80f.notion.site/ebd/22dc7f8fcc1c8024a912f1395cf974b3" width="100%" height="600" frameborder="0" allowfullscreen />
