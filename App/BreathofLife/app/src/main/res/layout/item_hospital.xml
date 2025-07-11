@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    android:elevation="10dp"
+    android:background="@drawable/box_style1">
+
+    <TextView
+        android:id="@+id/tv_hospital_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/seoul_extrabold"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="해운대백병원" />
+
+    <TextView
+        android:id="@+id/tv_hospital_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/seoul_med"
+        tools:text="부산광역시 해운대구 해운대로 875" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/seoul_med"
+            android:text="가용 병상: " />
+
+        <TextView
+            android:id="@+id/tv_available_beds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/seoul_med"
+            android:textStyle="bold"
+            tools:text="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/seoul_med"
+            android:text=" / " />
+
+        <TextView
+            android:id="@+id/tv_total_beds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/seoul_med"
+            tools:text="20" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_available_departments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/seoul_med"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="13sp"
+        tools:text="진료 가능: 내과, 외과, 정형외과" />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/seoul_med"
+        android:textStyle="bold"
+        tools:text="약 10.5km" />
+
+
+</LinearLayout>

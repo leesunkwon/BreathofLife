@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_rounded"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textViewDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/seoul_extrabold"
+        android:text="환자 상세 정보"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewDetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/seoul_med"
+        android:text="이름: 이선권"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewDetailAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/seoul_med"
+        android:text="나이: 24"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewDetailGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/seoul_med"
+        android:text="성별: 남"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewDetailSymptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/seoul_med"
+        android:text="주요 증상: 뇌졸증"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewDetailOtherInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/seoul_med"
+        android:text="기타 정보: 없음"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:background="@drawable/main_box3"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="닫기" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.kotlinsun.deuapp'
+    compileSdk 35
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    defaultConfig {
+        applicationId "com.kotlinsun.deuapp"
+        minSdk 28
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    implementation libs.firebase.firestore.ktx
+    implementation libs.firebase.auth.ktx
+    implementation libs.play.services.location
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+    implementation platform('com.google.firebase:firebase-bom:33.16.0') // Firebase 라이브러리들의 버전 관리를 위한 Firebase Bill of Materials (BOM)입니다. 이 버전을 사용하면 Firebase 하위 라이브러리들의 호환되는 버전을 자동으로 맞출 수 있습니다.
+    implementation 'com.google.ai.client.generativeai:generativeai:0.9.0' // Google Gemini API (Generative AI) 클라이언트 라이브러리입니다. AI 모델과 통신하는 기능을 제공합니다.
+
+    implementation("com.google.android.gms:play-services-location:21.2.0") // Google Play Services의 위치(Location) 서비스 라이브러리입니다. 기기의 위치 정보를 가져오는 데 사용됩니다.
+
+
+
+
+}
